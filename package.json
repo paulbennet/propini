@@ -1,6 +1,6 @@
 {
   "name": "prop-ini",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Reads, Writes, Manages INI/Property files",
   "main": "prop-ini.js",
   "directories": {
@@ -18,5 +18,13 @@
     "ini"
   ],
   "author": "Paul Bennet",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulbennet/propini.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulbennet/propini/issues"
+  },
+  "homepage": "https://github.com/paulbennet/propini#readme"
 }
