@@ -351,7 +351,7 @@
 	var PropINI = function (config) {
 		config = config || {};
 
-		this.sectionOrder = [];
+		this.sectionOrder = [GLOBAL_SECTION];
 		this.sections = {};
 		this.sections[GLOBAL_SECTION] = {};
 	};
@@ -489,6 +489,9 @@
 			if (section && section !== GLOBAL_SECTION) {
 				this.sections[section] = this.sections[section] || {};
 				targetSection = this.sections[section];
+				if (this.sectionOrder.indexOf(section) === -1) {
+					this.sectionOrder.push(section);
+				}
 			} else {
 				targetSection = this.sections[GLOBAL_SECTION];
 			}
